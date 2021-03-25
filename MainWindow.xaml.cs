@@ -24,5 +24,31 @@ namespace Flags
         {
             InitializeComponent();
         }
+
+        private void BabianKnapp_Click(object sender, RoutedEventArgs e)
+        {
+            if (BabianText.Text == "Babian")
+
+            {
+                BabianText.Text = "HOHA";
+                BabianKnapp.Content = "Babian";
+
+            }
+            else if(BabianText.Text == "HOHA")
+            {
+                var newButton = new Button();
+                newButton.Content = "Peekaboo";
+                newButton.Height = 40;
+                newButton.Width = 80;
+                MainGrid.Children.Add(newButton);
+            }
+            else
+            {
+                BabianText.Text = "Babian";
+                BabianKnapp.Content = "HOHA";
+            }
+        }
+
     }
+
 }

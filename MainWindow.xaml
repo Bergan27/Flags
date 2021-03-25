@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:Flags"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Name="BabianText" Height="40" Width="80"/>
+        <Button Name="BabianKnapp" Content="Babian" Width="70" Height="30" Click="BabianKnapp_Click" Grid.Row=" 1"/>
+
     </Grid>
 </Window>
